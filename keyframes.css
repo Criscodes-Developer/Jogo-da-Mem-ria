@@ -1,0 +1,16 @@
+@keyframes mudancadecor {
+
+0% {
+color: rgb(0, 0, 0);
+}
+
+50% {
+color: rgb(64, 195, 255);
+opacity: 0.9;
+}
+
+100% {
+color: rgb(0, 0, 0);
+}
+
+}

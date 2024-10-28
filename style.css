@@ -1,0 +1,119 @@
+
+.textos {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+
+ & .textos_titulo {
+ font-size: 2.6em;
+ height: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+ }
+}
+.jogo {
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  background-color: transparent;
+  padding: 30px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 400px rgba(7, 172, 255, 0.1);
+
+ & .cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ & .carta {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+ & .frente {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 63px;
+  animation: mudancadecor 4s infinite;
+  transition: 0.1s;
+}
+
+& .frente:hover {
+scale: 1.1;
+}
+
+ & .verso {
+  width: 100%;
+  height: 100%;
+  background-color: #00eeff;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  display: none;
+  font-size: 36px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+ & .carta.virada .frente {
+  display: none;
+  animation: opacidade 2s infinite;
+}
+
+ & .carta.virada .verso {
+  display: flex;
+}
+}
+
+.final {
+text-align: center;
+width: 40%;
+margin: auto;
+text-wrap: nowrap;
+
+.final_samilly {
+display: flex;
+gap: 10px;
+}
+
+#informacoes {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 50px;
+font-size: 0.92em;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+ & .final_p2-destaque {
+ font-weight: 800;
+}
+
+}
+
+.texto {
+text-align: center;
+color: red;
+font-size: 1.2em;
+}
+
+
+
+
